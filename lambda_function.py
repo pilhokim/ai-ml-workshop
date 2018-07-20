@@ -1,6 +1,7 @@
+import boto3
+import json
+    
 def lambda_handler(event, context):
-    import boto3
-    import json
     
     sagemaker = boto3.client('runtime.sagemaker')
     endpoint_name = 'ReplaceWithYourSeq2SeqEndpointName'
