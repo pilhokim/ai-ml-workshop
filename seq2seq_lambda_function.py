@@ -3,7 +3,7 @@ def lambda_handler(event, context):
     import json
     
     sagemaker = boto3.client('runtime.sagemaker')
-    endpoint_name = 'DEMO-Seq2SeqEndpointConfig-2018-03-14-13-26-43'
+    endpoint_name = 'ReplaceWithYourSeq2SeqEndpointName'
     
     sentences = event["sentences"]
 
